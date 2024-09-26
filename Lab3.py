@@ -9,8 +9,8 @@ if Monthly_salary >= 30000:
         total_loan = Loan_amount * 0.10
         month_payment = total_loan / months
 
-        print(f"Your loan amount with 10% interest is: {total_loan}")
-        print(f"Your monthly payment {months} months will be: {month_payment}")
+        print(f"Your loan amount with 10% interest is: {total_loan:.2f}")
+        print(f"Your monthly payment {months} months will be: {month_payment:.2f}")
 
     else:
         print("You are not eligble for a loan: Too high loan request")
