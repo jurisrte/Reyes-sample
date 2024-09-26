@@ -6,7 +6,7 @@ if Monthly_salary >= 30000:
         print("You are eligible for a loan")
         months = int(input("How many months to pay?: "))
 
-        total_loan = Loan_amount * 1.10
+        total_loan = Loan_amount * 0.10
         month_payment = total_loan / months
 
         print(f"Your loan amount with 10% interest is: {total_loan}")
