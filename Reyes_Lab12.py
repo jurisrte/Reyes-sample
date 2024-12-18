@@ -8,12 +8,12 @@ def get_item_price(choice):  # get the item price
     menu_prices = {1: 45.00, 2: 125.00, 3: 20.00}
     return menu_prices.get(choice, 0)
 
-def calculate_change(total, cash):
+def calculate_change(total, cash): # function for calculate change
     return cash - total
 
 display_menu() # Main function
 choice = int(input("Enter the number of the item you'd like to order: "))
-price = get_item_price(choice)
+price = get_item_price(choice) # run the function
 
 if price == 0:
     print("Invalid choice.")
@@ -22,7 +22,7 @@ else:
     while True:
         cash = float(input("Enter cash amount: "))
         if cash >= price:
-            change = calculate_change(price, cash)
+            change = calculate_change(price, cash) 
             print(f"Payment successful. Your change is P{change:.2f}")
             break
         else:
